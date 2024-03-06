@@ -42,3 +42,7 @@ openai textstat jsonlines json tqdm tenacity metaphone jellyfish pandas numpy st
 To create the environment from a spec list run:
 
 `conda create --name myenv --file spec-file.txt`
+
+## Help
+
+For any issues or help, please check [previous issues](https://github.com/BiasExplained/gender-trial-paper/issues) or open a new one
