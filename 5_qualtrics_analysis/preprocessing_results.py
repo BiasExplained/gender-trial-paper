@@ -4,8 +4,7 @@ import pandas as pd
 import os
 
 # Define home directory and project working directory
-home = os.path.expanduser('~')
-prjwd = "research-data/scifairness/5_qualtrics_analysis/responses"
+prjwd = "../data"
 
 # Flag to save figures and path to save plots
 savefig = True
@@ -51,7 +50,7 @@ egroup_l = ['TFemale', 'Control', 'TMale']
 # %% codecell
 # Load the raw data from the specified CSV file
 fname = "sciofsci_double-effect_-_Live_April_15,_2024_07.14_anonymised.csv"
-raw = pd.read_csv(os.path.join(home, prjwd, fname), header=0)
+raw = pd.read_csv(os.path.join(prjwd, fname), header=0)
 
 
 # --------------------------------------------------------------------------
