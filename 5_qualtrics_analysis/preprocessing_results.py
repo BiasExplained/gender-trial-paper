@@ -49,7 +49,7 @@ egroup_l = ['TFemale', 'Control', 'TMale']
 
 # %% codecell
 # Load the raw data from the specified CSV file
-fname = "sciofsci_double-effect_-_Live_April_15,_2024_07.14_anonymised.csv"
+fname = "sciofsci_double-effect_-_Live_April_15,_2024_07.14_anonymised_discipline.csv"
 raw = pd.read_csv(os.path.join(prjwd, fname), header=0)
 
 
@@ -57,9 +57,9 @@ raw = pd.read_csv(os.path.join(prjwd, fname), header=0)
 # %% Create a smaller copy
 df = raw[[
     'ResponseId', 'Progress', 'credibility', 'estimated_gender_reason',
-    'estimated_gender', 'occupation', 'participant_gender',
-    'TFemale', 'Control', 'TMale', 'female_author_first_name',
-    'male_author_first_name', 'control_author_first_name', 'keywords'
+    'estimated_gender', 'occupation', 'participant_gender', 'TFemale', 
+    'Control', 'TMale', 'female_author_first_name', 'male_author_first_name', 
+    'control_author_first_name', 'keywords', 'discipline'
     ]].copy()
 
 # Create a cite_likelihood column by consolidating the 3 groups
